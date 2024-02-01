@@ -122,7 +122,8 @@
 .MuiDrawer-paperAnchorDockedBottom {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
-</style><style data-jss="" data-meta="MuiTouchRipple">
+</style>
+<style data-jss="" data-meta="MuiTouchRipple">
 .MuiTouchRipple-root {
   top: 0;
   left: 0;
@@ -193,7 +194,8 @@
     transform: scale(1);
   }
 }
-</style><style data-jss="" data-meta="MuiButtonBase">
+</style>
+<style data-jss="" data-meta="MuiButtonBase">
 .MuiButtonBase-root {
   color: inherit;
   border: 0;
@@ -226,7 +228,8 @@
     -webkit-print-color-adjust: exact;
   }
 }
-</style><style data-jss="" data-meta="MuiButton">
+</style>
+<style data-jss="" data-meta="MuiButton">
 .MuiButton-root {
   color: rgba(0, 0, 0, 0.87);
   padding: 6px 16px;
@@ -447,7 +450,8 @@
 .MuiButton-iconSizeLarge > *:first-child {
   font-size: 22px;
 }
-</style><style data-jss="" data-meta="MuiSnackbar">
+</style>
+<style data-jss="" data-meta="MuiSnackbar">
 .MuiSnackbar-root {
   left: 8px;
   right: 8px;
