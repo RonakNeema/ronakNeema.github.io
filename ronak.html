@@ -3509,8 +3509,202 @@ img{
 }
 </style>
 
-    
-    
+<!-- ABOUT  -->
+    <style>
+        .about {
+    /* min-height: 100vh; */
+    position: relative;
+}
+
+.about .line-styling{
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 85%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .line-styling .style-circle{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.about .line-styling .style-line{
+  width: 95%;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.about-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 8rem;
+    height: fit-content;
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex: 0.5;
+    width: 100%;
+    height: fit-content;
+}
+
+.about-description >h2 {
+    margin-bottom: 40px;
+    font-size: 3.5rem;
+    font-family: var(--primaryFont);
+}
+
+.about-description > p {
+    font-size: 1.25rem;
+    color: #e0d9d9;
+    font-family: var(--primaryFont);
+}
+
+.about-img {
+    margin-top: 40px;
+    pointer-events: none;
+}
+
+.about-img > img {
+    width: 380px;
+    flex: 0.5;
+}
+
+@media (min-width: 992px) and (max-width: 1380px) {
+
+    .about-description > h2 {
+      font-size: 3.3rem;
+      margin-bottom: 30px;
+    }
+    .about-description > p {
+      font-size: 1.15rem;
+    }
+
+    .about-img>img {
+        width: 300px;
+    } 
+}
+
+@media screen and (max-width: 992px){
+
+  .about .line-styling{
+    top: 20px;
+  }
+
+    .about-body {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .about-description{
+        flex: 0.6;
+        box-sizing: border-box;
+        /* padding: 5% 10%; */
+        padding: 20px;
+
+    }
+
+    .about-description > h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .about-description > p {
+        font-size: 1.1rem;
+    }
+
+    .about-img > img {
+        width: 250px;
+        flex: 0.4;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+  .about .line-styling .style-circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .about-description > h2{
+    align-self: center;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  .about .line-styling .style-circle{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+  .about .line-styling .style-line{
+    width: 93%;
+    height: 3px;
+    border-radius: 10px;
+  }
+
+  .about-description > h2 {
+    font-size: 2.5rem;
+  }
+
+    .about-description > p{
+      font-size: 0.95rem;
+    }
+
+    .about-img > img {
+        width: 200px;
+    }
+}
+
+    </style>
+    <!-- button -->
+    <style>
+      .button-35 {
+    align-items: center;
+    background-color: rgb(240, 243, 246);
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px, rgb(240, 243, 246) 0 0px 3px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: var(--primaryFont);
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    touch-action: manipulation;
+}
+
+.button-35:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+    </style>
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1152.0" data-gr-ext-installed=""><noscript>You need to enable JavaScript to run
@@ -3530,7 +3724,7 @@ img{
                 </div>
                 <div class="landing">
                     <div class="landing--container" >
-                        <div class="landing--container-left" style="background-color: rgb(63, 195, 55);">
+                        <div class="landing--container-left" style="background-color: rgb(240, 243, 246)">
                             <div class="lcl--content"><a href="https://www.linkedin.com/in/ronak-neema/"
                                     target="_blank" rel="noreferrer"><svg stroke="currentColor" fill="currentColor"
                                         stroke-width="0" viewBox="0 0 448 512" class="landing--social"
@@ -3549,8 +3743,8 @@ img{
                                     </svg></a></div>
                         </div><img src="./ronak.jpg" alt=""
                             class="landing--img" style="opacity: 1; border-color: rgb(33, 33, 33);">
-                        <div class="landing--container-right" style="background-color: rgb(33, 33, 33);">
-                            <div class="lcr--content" style="color: rgb(234, 234, 234);">
+                        <div class="landing--container-right" style="background-color: rgb(140, 155, 165)">
+                            <div class="lcr--content" style="color: rgb(9, 9, 9);">
                                 <h6>Software Engineer/Graduate Student</h6>
                                 <h1>Ronak Neema</h1>
                                 <p>Amidst the bustling city's hum and din, He stood, with eyes fixed on the skyline.
@@ -3565,7 +3759,7 @@ img{
                                 <div class="lcr-buttonContainer"><a
                                         href="/portfolio/static/media/resume.d04061a2cfb97068eb09.pdf" download="resume"
                                         target="_blank" rel="noreferrer"><button
-                                            class="MuiButtonBase-root MuiButton-root MuiButton-text jss81" tabindex="0"
+                                            class="button-35" tabindex="0"
                                             type="button"><span class="MuiButton-label">Download CV</span><span
                                                 class="MuiTouchRipple-root"></span></button></a><a spy="true"
                                         duration="2000" href="/#contacts"><button
@@ -3576,16 +3770,16 @@ img{
                         </div>
                     </div>
                 </div>
-                <div class="about" id="about" style="background-color: rgb(33, 33, 33);">
+                <div class="about" id="about" style="background-color:rgb(140, 155, 165);">
                     <div class="line-styling">
-                        <div class="style-circle" style="background-color: rgb(63, 195, 55);"></div>
-                        <div class="style-circle" style="background-color: rgb(63, 195, 55);"></div>
-                        <div class="style-line" style="background-color: rgb(63, 195, 55);"></div>
+                        <div class="style-circle" style="background-color: rgb(240, 243, 246);"></div>
+                        <div class="style-circle" style="background-color: rgb(240, 243, 246);"></div>
+                        <div class="style-line" style="background-color: rgb(240, 243, 246);"></div>
                     </div>
                     <div class="about-body">
                         <div class="about-description">
-                            <h2 style="color: rgb(63, 195, 55);">Who I am</h2>
-                            <p style="color: rgba(234, 234, 234, 0.8);">My name is Prashant. I'm a Computer Science
+                            <h2 style="color: rgb(240, 243, 246);">Who I am</h2>
+                            <p style="color: rgba(234, 234, 234, 0.8);">My name is Ronak. I'm a Computer Science
                                 Graduate Student and an Experienced Software Engineer based in Chicago, IL.<br><br>I
                                 have over 3 years of professional work experience.
                                 During my career I have built products helping Big 4 US &amp; UK Banks to leverage
@@ -3598,17 +3792,17 @@ img{
                                 alt=""></div>
                     </div>
                 </div>
-                <div class="education" id="resume" style="background-color: rgb(33, 33, 33);">
+                <div class="education" id="resume" style="background-color: rgb(140, 155, 165)">
                     <div class="education-body">
                         <div class="education-description">
-                            <h1 style="color: rgb(63, 195, 55);">Education</h1>
+                            <h1 style="color: rgb(240, 243, 246);">Education</h1>
                             <div class="react-reveal education-card jss83"
                                 style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-671048430839742-1;">
-                                <div class="educard-img" style="background-color: rgb(63, 195, 55);"><img
+                                <div class="educard-img" style="background-color: rgb(240, 243, 246);"><img
                                         src="/portfolio/static/media/eduImgWhite.433f9250502a8b9b87ba754528481d86.svg"
                                         alt=""></div>
                                 <div class="education-details">
-                                    <h6 style="color: rgb(63, 195, 55);">2015-2019</h6>
+                                    <h6 style="color: rgb(240, 243, 246);">2015-2019</h6>
                                     <h4 style="color: rgb(234, 234, 234);">Bachelor of Technology</h4>
                                     <h5 style="color: rgba(234, 234, 234, 0.8);">Jaypee Institute of Informtaion
                                         Technology, India</h5>
@@ -3616,11 +3810,11 @@ img{
                             </div>
                             <div class="react-reveal education-card jss84"
                                 style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-671048430839742-1;">
-                                <div class="educard-img" style="background-color: rgb(63, 195, 55);"><img
+                                <div class="educard-img" style="background-color: rgb(240, 243, 246);"><img
                                         src="/portfolio/static/media/eduImgWhite.433f9250502a8b9b87ba754528481d86.svg"
                                         alt=""></div>
                                 <div class="education-details">
-                                    <h6 style="color: rgb(63, 195, 55);">2021-2023</h6>
+                                    <h6 style="color: rgb(240, 243, 246);">2021-2023</h6>
                                     <h4 style="color: rgb(234, 234, 234);">Master of Computer Science</h4>
                                     <h5 style="color: rgba(234, 234, 234, 0.8);">Illinois Institute of Technology</h5>
                                 </div>
@@ -3631,9 +3825,9 @@ img{
                         </div>
                     </div>
                 </div>
-                <div class="skills" id="skills" style="background-color: rgb(33, 33, 33);">
+                <div class="skills" id="skills" style="background-color: rgb(140, 155, 165)">
                     <div class="skillsHeader">
-                        <h2 style="color: rgb(63, 195, 55);">Skills</h2>
+                        <h2 style="color: rgb(240, 243, 246);">Skills</h2>
                     </div>
                     <div class="skillsContainer">
                         <div class="skill--scroll">
@@ -3860,42 +4054,42 @@ img{
                         </div>
                     </div>
                 </div>
-                <div class="experience" id="experience" style="background-color: rgb(33, 33, 33);">
+                <div class="experience" id="experience" style="background-color: rgb(140, 155, 165)">
                     <div class="experience-body">
                         <div class="experience-image"><img
                                 src="/portfolio/static/media/expGreen.16b06cc584dc9f60d8200ab5e3366036.svg" alt="">
                         </div>
                         <div class="experience-description">
-                            <h1 style="color: rgb(63, 195, 55);">Experience</h1>
+                            <h1 style="color: rgb(240, 243, 246);">Experience</h1>
                             <div class="react-reveal experience-card jss85"
                                 style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-671048430839742-1;">
-                                <div class="expcard-img" style="background-color: rgb(63, 195, 55);"><img
+                                <div class="expcard-img" style="background-color: rgb(240, 243, 246);"><img
                                         src="/portfolio/static/media/expImgWhite.b9923db466bf4544f6942bc67c5b4a7b.svg"
                                         alt=""></div>
                                 <div class="experience-details">
-                                    <h6 style="color: rgb(63, 195, 55);">2019-2020</h6>
+                                    <h6 style="color: rgb(240, 243, 246);">2019-2020</h6>
                                     <h4 style="color: rgb(234, 234, 234);">Software Developer</h4>
                                     <h5 style="color: rgba(234, 234, 234, 0.8);">Tata Consultancy Services Ltd.</h5>
                                 </div>
                             </div>
                             <div class="react-reveal experience-card jss86"
                                 style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-671048430839742-1;">
-                                <div class="expcard-img" style="background-color: rgb(63, 195, 55);"><img
+                                <div class="expcard-img" style="background-color: rgb(240, 243, 246);"><img
                                         src="/portfolio/static/media/expImgWhite.b9923db466bf4544f6942bc67c5b4a7b.svg"
                                         alt=""></div>
                                 <div class="experience-details">
-                                    <h6 style="color: rgb(63, 195, 55);">2020-2021</h6>
+                                    <h6 style="color: rgb(240, 243, 246);">2020-2021</h6>
                                     <h4 style="color: rgb(234, 234, 234);">Software Engineer</h4>
                                     <h5 style="color: rgba(234, 234, 234, 0.8);">Lloyds Banking Group Plc</h5>
                                 </div>
                             </div>
                             <div class="react-reveal experience-card jss87"
                                 style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-671048430839742-1;">
-                                <div class="expcard-img" style="background-color: rgb(63, 195, 55);"><img
+                                <div class="expcard-img" style="background-color: rgb(240, 243, 246);"><img
                                         src="/portfolio/static/media/expImgWhite.b9923db466bf4544f6942bc67c5b4a7b.svg"
                                         alt=""></div>
                                 <div class="experience-details">
-                                    <h6 style="color: rgb(63, 195, 55);">2022-2023</h6>
+                                    <h6 style="color: rgb(240, 243, 246);">2022-2023</h6>
                                     <h4 style="color: rgb(234, 234, 234);">Software Developer &amp; Grad TA - Enterprise
                                         Web Dev &amp; Information Security</h4>
                                     <h5 style="color: rgba(234, 234, 234, 0.8);">Illinois Institute of Technology</h5>
@@ -3904,9 +4098,9 @@ img{
                         </div>
                     </div>
                 </div>
-                <div class="projects" id="projects" style="background-color: rgb(33, 33, 33);">
+                <div class="projects" id="projects" style="background-color:rgb(140, 155, 165)">
                     <div class="projects--header">
-                        <h1 style="color: rgb(63, 195, 55);">Projects</h1>
+                        <h1 style="color: rgb(240, 243, 246);">Projects</h1>
                     </div>
                     <div class="projects--body">
                         <div class="projects--bodyContainer">
@@ -4024,9 +4218,9 @@ img{
                                     </svg></button></a></div>
                     </div>
                 </div>
-                <div class="achievement" id="achievement" style="background-color: rgb(33, 33, 33);">
+                <div class="achievement" id="achievement" style="background-color: rgb(140, 155, 165)">
                     <div class="achievement-body">
-                        <h1 style="color: rgb(63, 195, 55);">Achievements</h1>
+                        <h1 style="color: rgb(240, 243, 246);">Achievements</h1>
                         <h4 style="color: rgb(234, 234, 234);">I have been relentlessly in my pursuit of knowledge and
                             apply my skills to build products, I am fortunate to have been awarded for my efforts.</h4>
                     </div>
@@ -4039,7 +4233,7 @@ img{
                                     <p style="color: rgba(234, 234, 234, 0.8);">Won the first prize at Hacknite 2023,
                                         annual hackathon hosted at the Illinois Institute of Technology, Chicago</p>
                                 </div>
-                                <div class="achievecard-details2" style="color: rgb(63, 195, 55);">
+                                <div class="achievecard-details2" style="color: rgb(240, 243, 246);">
                                     <h5>April 20, 2023</h5>
                                     <div class="achievecard-field"><svg stroke="currentColor" fill="currentColor"
                                             stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
@@ -4064,7 +4258,7 @@ img{
                                     <p style="color: rgba(234, 234, 234, 0.8);">Built MVP for a Pharma tech startup,
                                         which won the first prize (30K USD as seed fund) at Kaplan Pitch Tank 2022.</p>
                                 </div>
-                                <div class="achievecard-details2" style="color: rgb(63, 195, 55);">
+                                <div class="achievecard-details2" style="color: rgb(240, 243, 246);">
                                     <h5>April, 2022</h5>
                                     <div class="achievecard-field"><svg stroke="currentColor" fill="currentColor"
                                             stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
@@ -4089,7 +4283,7 @@ img{
                                     <p style="color: rgba(234, 234, 234, 0.8);">Learnt various cloud services provided
                                         by AWS and how to build solutions with them.</p>
                                 </div>
-                                <div class="achievecard-details2" style="color: rgb(63, 195, 55);">
+                                <div class="achievecard-details2" style="color: rgb(240, 243, 246);">
                                     <h5>August, 2019</h5>
                                     <div class="achievecard-field"><svg stroke="currentColor" fill="currentColor"
                                             stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
@@ -4109,17 +4303,17 @@ img{
                         </div>
                     </div>
                 </div>
-                <div class="contacts" id="contacts" style="background-color: rgb(33, 33, 33);">
+                <div class="contacts" id="contacts" style="background-color: rgb(140, 155, 165)">
                     <div class="contacts--container">
-                        <h1 style="color: rgb(63, 195, 55);">Contacts</h1>
+                        <h1 style="color: rgb(240, 243, 246);">Contacts</h1>
                         <div class="contacts-body">
                             <div class="contacts-form">
                                 <form>
                                     <div class="input-container"><label for="Name" class="jss103">Name</label><input
-                                            placeholder="Prashant Bhutani" type="text" name="Name"
+                                            placeholder="Ronak Bhutani" type="text" name="Name"
                                             class="form-input jss101" value=""></div>
                                     <div class="input-container"><label for="Email" class="jss103">Email</label><input
-                                            placeholder="Prashant@Bhutani.com" type="email" name="Email"
+                                            placeholder="Ronak@Bhutani.com" type="email" name="Email"
                                             class="form-input jss101" value=""></div>
                                     <div class="input-container"><label for="Message"
                                             class="jss103">Message</label><textarea placeholder="Type your message...."
@@ -4187,14 +4381,14 @@ img{
                                             <path
                                                 d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
                                             </path>
-                                        </svg></a><a href="https://www.linkedin.com/in/prashantbhutani" target="_blank"
+                                        </svg></a><a href="https://www.linkedin.com/in/Ronakbhutani" target="_blank"
                                         rel="noreferrer" class="jss104"><svg stroke="currentColor" fill="currentColor"
                                             stroke-width="0" viewBox="0 0 448 512" aria-label="LinkedIn" height="1em"
                                             width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
                                             </path>
-                                        </svg></a><a href="https://www.leetcode.com/prashantbhutani" target="_blank"
+                                        </svg></a><a href="https://www.leetcode.com/Ronakbhutani" target="_blank"
                                         rel="noreferrer" class="jss104"><svg stroke="currentColor" fill="currentColor"
                                             stroke-width="0" viewBox="0 0 640 512" aria-label="leetcode" height="1em"
                                             width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -4207,9 +4401,9 @@ img{
                     </div><img src="/portfolio/static/media/contactsGreen.47f34fc682de82476b815b925a392d5f.svg"
                         alt="contacts" class="contacts--img">
                 </div>
-                <div class="footer" style="background-color: rgb(33, 33, 33);">
+                <div class="footer" style="background-color: rgb(140, 155, 165);">
                     <p style="color: rgb(234, 234, 234);">Made with<span
-                            style="color: rgb(63, 195, 55); margin: 0px 0.5rem -1rem;">❤</span>by Prashant</p>
+                            style="color: rgb(240, 243, 246); margin: 0px 0.5rem -1rem;">❤</span>by Ronak</p>
                 </div>
             </div>
             <div class="backToTop" style="display: none;"><button aria-label="Back to top"><svg stroke="currentColor"
