@@ -1295,3 +1295,14 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+.horizontal-list {
+  list-style-type: disc;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.horizontal-list li {
+  margin-right: 50px; /* Adjust the spacing between items */
+  margin-bottom: 10px; /* Space below items for wrap-around */
+}
